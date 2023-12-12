@@ -18,6 +18,23 @@ def getHandType(hand,card_counts):
     pos4 = card_order[::-1].index(hand[3])
     pos5 = card_order[::-1].index(hand[4])
 
+
+    if pos1 < 10:
+        pos1 = "0" + str(pos1)
+
+    if pos2 < 10:
+        pos2 = "0" + str(pos2)
+
+    if pos3 < 10:
+        pos3 = "0" + str(pos3)
+
+    if pos4 < 10:
+        pos4 = "0" + str(pos4)
+
+    if pos5 < 10:
+        pos5 = "0" + str(pos5)    
+
+    
     #print(hand,pos1,pos2,pos3,pos4,pos5)
     
     
